@@ -354,7 +354,7 @@ MonoBehaviour:
       - m_Target: {fileID: 797327988}
         m_TargetAssemblyTypeName: SaveLoadManager, Assembly-CSharp
         m_MethodName: LoadPlayerData
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -509,7 +509,7 @@ MonoBehaviour:
       - m_Target: {fileID: 797327988}
         m_TargetAssemblyTypeName: SaveLoadManager, Assembly-CSharp
         m_MethodName: LoadPlayerData
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1077,7 +1077,7 @@ MonoBehaviour:
       - m_Target: {fileID: 797327988}
         m_TargetAssemblyTypeName: SaveLoadManager, Assembly-CSharp
         m_MethodName: SavePlayerData
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1237,6 +1237,151 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a48c5c05be7e62944bac881fc7948ab8, type: 3}
+--- !u!1 &410289909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 410289913}
+  - component: {fileID: 410289912}
+  - component: {fileID: 410289911}
+  - component: {fileID: 410289910}
+  m_Layer: 0
+  m_Name: CheckPoint
+  m_TagString: CheckPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &410289910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410289909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a288ec7f0d97a548b94f1a9b5742443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 726172394}
+  saveLoadManager: {fileID: 797327988}
+--- !u!61 &410289911
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410289909}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.9516053, y: -0.26129028}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3, y: 3}
+    newSize: {x: 1.17, y: 0.39}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.70322275, y: 2.4936254}
+  m_EdgeRadius: 0
+--- !u!212 &410289912
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410289909}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 3af49b13e80e1654aadfec5efcc4b129, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.17, y: 0.39}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &410289913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410289909}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.594, y: -0.36, z: 0}
+  m_LocalScale: {x: 0.55593896, y: 0.55593896, z: 0.55593896}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &422559023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,7 +1480,7 @@ MonoBehaviour:
       - m_Target: {fileID: 797327988}
         m_TargetAssemblyTypeName: SaveLoadManager, Assembly-CSharp
         m_MethodName: SavePlayerData
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -21967,7 +22112,7 @@ MonoBehaviour:
       - m_Target: {fileID: 797327988}
         m_TargetAssemblyTypeName: SaveLoadManager, Assembly-CSharp
         m_MethodName: SavePlayerData
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -22312,7 +22457,7 @@ MonoBehaviour:
       - m_Target: {fileID: 797327988}
         m_TargetAssemblyTypeName: SaveLoadManager, Assembly-CSharp
         m_MethodName: LoadPlayerData
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -22591,7 +22736,7 @@ MonoBehaviour:
       - m_Target: {fileID: 797327988}
         m_TargetAssemblyTypeName: SaveLoadManager, Assembly-CSharp
         m_MethodName: LoadPlayerData
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -23146,7 +23291,7 @@ MonoBehaviour:
       - m_Target: {fileID: 797327988}
         m_TargetAssemblyTypeName: SaveLoadManager, Assembly-CSharp
         m_MethodName: LoadPlayerData
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -24076,7 +24221,7 @@ MonoBehaviour:
       - m_Target: {fileID: 797327988}
         m_TargetAssemblyTypeName: SaveLoadManager, Assembly-CSharp
         m_MethodName: SavePlayerData
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -24361,7 +24506,7 @@ MonoBehaviour:
       - m_Target: {fileID: 797327988}
         m_TargetAssemblyTypeName: SaveLoadManager, Assembly-CSharp
         m_MethodName: SavePlayerData
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -25203,6 +25348,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1163444921}
     - target: {fileID: 8125563719255511135, guid: 6cdb5ef6764ef30448310aba99d170e7, type: 3}
+      propertyPath: saveLoadManager
+      value: 
+      objectReference: {fileID: 797327988}
+    - target: {fileID: 8125563719255511135, guid: 6cdb5ef6764ef30448310aba99d170e7, type: 3}
       propertyPath: playerGameObject
       value: 
       objectReference: {fileID: 1916759675}
@@ -25240,3 +25389,4 @@ SceneRoots:
   - {fileID: 69231512}
   - {fileID: 8125563718887698157}
   - {fileID: 797327989}
+  - {fileID: 410289913}

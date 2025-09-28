@@ -19,7 +19,7 @@ namespace Platformer
 
         [Header("player data")]
         public PlayerData playerData;
-
+        public SaveLoadManager saveLoadManager;
 
         void Start()
         {
@@ -35,7 +35,8 @@ namespace Platformer
                 GameObject deathPlayer = (GameObject)Instantiate(deathPlayerPrefab, playerGameObject.transform.position, playerGameObject.transform.rotation);
                 deathPlayer.transform.localScale = new Vector3(playerGameObject.transform.localScale.x, playerGameObject.transform.localScale.y, playerGameObject.transform.localScale.z);
                 player.deathState = false;
-                //Invoke("ReloadLevel", 3);
+                Invoke("CheckPointLoad", 2);
+                ;
             }
         }
 
@@ -44,6 +45,12 @@ namespace Platformer
         //    Application.LoadLevel(Application.loadedLevel);
 
         //}
+
+        private void CheckPointLoad()
+        {
+            saveLoadManager.LoadPlayerData("checkPoint");
+            LoadDataUpdate();
+        }
 
         public void SaveDataUpdate()
         {
