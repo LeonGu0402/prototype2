@@ -45,7 +45,7 @@ public class SaveLoadManager : MonoBehaviour
 
     public void SavePlayerData(string saveIndex)
     {
-        fileSaveLocation = savePath + "/" + saveIndex + ".PlayerSave";
+        fileSaveLocation = savePath + "/" + saveIndex + " PlayerSave";
 
         //no data or no path
         if (gameManager == null || fileSaveLocation == "")
@@ -64,7 +64,7 @@ public class SaveLoadManager : MonoBehaviour
 
     public void LoadPlayerData(string saveIndex)
     {
-        fileSaveLocation = savePath + "/" + saveIndex + ".PlayerSave";
+        fileSaveLocation = savePath + "/" + saveIndex + " PlayerSave";
 
         if (fileSaveLocation == "")
         {
